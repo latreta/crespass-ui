@@ -1,12 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeModule } from './home/home.module';
 import { SharedModule } from './shared/shared.module';
-import { ContentModule } from './content/content.module';
 import { AdminModule } from './admin/admin.module';
+import { ProdutosModule } from './content/produtos/produtos.module';
+import { BemVindoModule } from './content/bemvindo/bemvindo.module';
+import { RouterModule } from '@angular/router';
+import { SectionsModule } from './sections/sections.module';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,14 @@ import { AdminModule } from './admin/admin.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HomeModule,
     SharedModule,
-    ContentModule,
-    AdminModule
+    ProdutosModule, 
+    BemVindoModule,
+    AdminModule,
+    SectionsModule,
+    RouterModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

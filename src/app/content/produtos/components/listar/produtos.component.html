@@ -5,7 +5,9 @@
     <div class="col-3 rounded" *ngFor="let item of [1,2,3,4,5]">
       <img src="../../../assets/imgs/products/a.jpg" class="img-fluid rounded" style="height:200px;width:300px;">
       <div>
-        <h4>{{item}}</h4>
+        <a [routerLink]="['/produtos', item]" routerLinkActive="false" >
+          <h4>{{item}}</h4>
+        </a>
       </div>
     </div>
   </div>
