@@ -18,4 +18,4 @@ import { PerguntasComponent } from './perguntas/perguntas.component';
     CommonModule
   ]
 })
-export class AdminModule { }
+export class PanelModule { }

@@ -4,11 +4,11 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeModule } from './home/home.module';
 import { SharedModule } from './shared/shared.module';
-import { AdminModule } from './admin/admin.module';
 import { ProdutosModule } from './content/produtos/produtos.module';
 import { BemVindoModule } from './content/bemvindo/bemvindo.module';
 import { RouterModule } from '@angular/router';
 import { SectionsModule } from './sections/sections.module';
+import { PanelModule } from './panel/panel.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { SectionsModule } from './sections/sections.module';
     SharedModule,
     ProdutosModule, 
     BemVindoModule,
-    AdminModule,
+    PanelModule,
     SectionsModule,
     RouterModule,
     AppRoutingModule

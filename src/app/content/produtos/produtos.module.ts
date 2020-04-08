@@ -4,18 +4,21 @@ import { ProdutosComponent } from './components/listar/produtos.component';
 import { FiltrosComponent } from './components/filtros/filtros.component';
 import { RouterModule } from '@angular/router';
 import { DetalharComponent } from './components/detalhar/detalhar.component';
+import { LojinhasComponent } from '../lojinhas/components/listar/lojinhas.component';
 
 @NgModule({
     imports: [CommonModule, RouterModule],
     exports: [
         ProdutosComponent,
         FiltrosComponent,
-        DetalharComponent
+        DetalharComponent,
+        LojinhasComponent
     ],
     declarations: [
         ProdutosComponent,
         FiltrosComponent,
-        DetalharComponent
+        DetalharComponent,
+        LojinhasComponent
     ],
     providers: []
 })
