@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeModule } from './home/home.module';
 import { SharedModule } from './shared/shared.module';
-import { ProdutosModule } from './content/produtos/produtos.module';
+import { ContentModule } from './content/content.module';
 import { BemVindoModule } from './content/bemvindo/bemvindo.module';
 import { RouterModule } from '@angular/router';
 import { SectionsModule } from './sections/sections.module';
@@ -18,7 +18,7 @@ import { PanelModule } from './panel/panel.module';
     BrowserModule,
     HomeModule,
     SharedModule,
-    ProdutosModule, 
+    ContentModule,
     BemVindoModule,
     PanelModule,
     SectionsModule,
