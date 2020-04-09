@@ -8,14 +8,14 @@ import { BemVindoModule } from './content/bemvindo/bemvindo.module';
 import { LojinhasComponent } from './content/lojinhas/components/listar/lojinhas.component';
 import { AjudaComponent } from './content/ajuda/ajuda.component';
 
-import { ProdutosComponent } from './content/produtos/components/listar/produtos.component';
-import { ProdutoDetalharComponent } from './content/produtos/components/produto-detalhar/produto-detalhar.component';
+import { ListarProdutosComponent } from './content/produtos/components/produto-listar/listar-produtos.component';
+import { ViewProductComponent } from './content/produtos/components/view-product/view-product.component';
 
 const routes: Routes = [
   { path: '', component: BemvindoComponent },
   { path: 'lojas', component: LojinhasComponent },
-  { path: 'produtos', component: ProdutosComponent },
-  { path: 'produtos/:id', component: ProdutoDetalharComponent},
+  { path: 'produtos', component: ListarProdutosComponent },
+  { path: 'produtos/:id', component: ViewProductComponent},
   { path: 'ajuda', component: AjudaComponent}
 ];
 

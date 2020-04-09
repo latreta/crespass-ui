@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  templateUrl: './produto-detalhar.component.html'
+  templateUrl: './view-product.component.html'
 })
-export class ProdutoDetalharComponent implements OnInit {
+export class ViewProductComponent implements OnInit {
   private id: any;
 
   constructor(activeRoute: ActivatedRoute) {
