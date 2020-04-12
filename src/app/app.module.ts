@@ -9,6 +9,8 @@ import { BemVindoModule } from './content/bemvindo/bemvindo.module';
 import { RouterModule } from '@angular/router';
 import { SectionsModule } from './sections/sections.module';
 import { PanelModule } from './panel/panel.module';
+import { HttpClientModule } from '@angular/common/http';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -16,16 +18,17 @@ import { PanelModule } from './panel/panel.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    RouterModule,
+    AppRoutingModule,
     HomeModule,
+    CoreModule,
     SharedModule,
     ContentModule,
     BemVindoModule,
     PanelModule,
-    SectionsModule,
-    RouterModule,
-    AppRoutingModule
+    SectionsModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
