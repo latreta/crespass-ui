@@ -15,11 +15,13 @@ export interface Product {
     targets: string;
     createdAt: string;
 }
-
+export interface Brand {
+    id?: number;
+    name: string;
+}
 export interface Usuario {
     id?: number;
     email: string;
     password: string;
-    confirmPassword: string;
-    
+    confirmPassword: string;    
 }
