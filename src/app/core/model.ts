@@ -25,3 +25,8 @@ export interface Usuario {
     password: string;
     confirmPassword: string;    
 }
+
+export interface Category {
+    id?: number;
+    name: string;
+}
