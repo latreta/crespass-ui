@@ -30,3 +30,10 @@ export interface Category {
     id?: number;
     name: string;
 }
+
+export interface SignupForm {
+    name: string;
+    email: string;
+    password: string;
+    password_confirmation: string;
+}
