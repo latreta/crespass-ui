@@ -10,13 +10,16 @@ import { AjudaComponent } from './content/ajuda/ajuda.component';
 
 import { ListarProdutosComponent } from './content/produtos/components/produto-listar/listar-produtos.component';
 import { ViewProductComponent } from './content/produtos/components/view-product/view-product.component';
+import { SignUpComponent } from './home/signup/signup.component';
 
 const routes: Routes = [
   { path: '', component: BemvindoComponent },
+  { path: 'cadastrar', component: SignUpComponent},
   { path: 'lojas', component: LojinhasComponent },
   { path: 'produtos', component: ListarProdutosComponent },
   { path: 'produtos/:id', component: ViewProductComponent},
-  { path: 'ajuda', component: AjudaComponent}
+  { path: 'ajuda', component: AjudaComponent},
+  { path: '*', redirectTo: '/cadastrar', pathMatch: 'full'}
 ];
 
 @NgModule({
