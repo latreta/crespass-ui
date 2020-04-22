@@ -19,21 +19,31 @@ export interface Brand {
     id?: number;
     name: string;
 }
-export interface Usuario {
-    id?: number;
-    email: string;
-    password: string;
-    confirmPassword: string;    
-}
-
 export interface Category {
     id?: number;
     name: string;
 }
 
-export interface SignupForm {
+export interface Address {
+    id?: number;
+    user_id: number;
+    cep: string;
+    state: string;
+    city: string;
+    address: string;
+    complement?: string;
+    number: string;
+    neighborhood: string;
+}
+
+export interface User {
     name: string;
+    lastName: string;
     email: string;
+    address: Address;
     password: string;
+}
+
+export interface SignupForm extends User {
     password_confirmation: string;
 }
