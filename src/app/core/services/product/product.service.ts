@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class ProductService {
 
-  endpointURL: string = `${environment.API_URL}products`;
+  endpointURL = `${environment.API_URL}products`;
 
   constructor(private http: HttpClient) { }
 

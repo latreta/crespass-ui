@@ -9,7 +9,7 @@ import { Brand } from '../../model';
 })
 export class BrandService {
 
-  endpointURL: string = `${environment.API_URL}/brands`;
+  endpointURL = `${environment.API_URL}/brands`;
 
   constructor(private http: HttpClient) { }
 
