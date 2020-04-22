@@ -9,29 +9,27 @@ import { User, SignupForm } from 'src/app/core/model';
 export class SignUpComponent {
 
     private signupForm: FormGroup;
-    private contador = 0;
 
     constructor(private signupService: SignupService, private fb: FormBuilder) {
         this.signupForm = this.fb.group({
-            name: ['teste'],
-            lastName: ['testes2'],
-            email: [`teste${this.contador}@teste.com`],
-            password: ['12345678'],
-            password_confirmation: ['12345678'],
+            name: [''],
+            lastName: [''],
+            email: [''],
+            password: [''],
+            password_confirmation: [''],
             address: this.fb.group({
-                cep: ['234234'],
-                street: ['t'],
-                number: ['1'],
-                complement: ['s'],
-                city: ['re'],
-                state: ['pe'],
-                neighborhood: ['bar']
+                cep: [''],
+                street: [''],
+                number: [''],
+                complement: [''],
+                city: [''],
+                state: [''],
+                neighborhood: ['']
             })
         });
     }
 
     private signup() {
-        this.contador++;
         const formData = this.signupForm.value as SignupForm;
         this.signupService.signUp(formData);
     }
