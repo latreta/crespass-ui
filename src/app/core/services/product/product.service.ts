@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Product } from '../model';
+import { Product } from '../../model';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class ProductService {
 
-  endpointURL: string = `${environment.API_URL}products`;
+  endpointURL = `${environment.API_URL}products`;
 
   constructor(private http: HttpClient) { }
 

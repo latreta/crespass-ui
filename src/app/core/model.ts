@@ -15,11 +15,35 @@ export interface Product {
     targets: string;
     createdAt: string;
 }
-
-export interface Usuario {
+export interface Brand {
     id?: number;
+    name: string;
+}
+export interface Category {
+    id?: number;
+    name: string;
+}
+
+export interface Address {
+    id?: number;
+    user_id: number;
+    cep: string;
+    state: string;
+    city: string;
+    address: string;
+    complement?: string;
+    number: string;
+    neighborhood: string;
+}
+
+export interface User {
+    name: string;
+    lastName: string;
     email: string;
+    address: Address;
     password: string;
-    confirmPassword: string;
-    
+}
+
+export interface SignupForm extends User {
+    password_confirmation: string;
 }

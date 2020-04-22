@@ -46,3 +46,7 @@ body {
 .footer {
     background-color:#FEC860;
 }
+
+ng-component {
+    width: 100%;
+}
