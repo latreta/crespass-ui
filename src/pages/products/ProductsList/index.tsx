@@ -5,7 +5,7 @@ import { ProductItem } from 'components/product/product'
 function ProductsList() {
   return (
     <div className="grid grid-cols-5 space-y-8">
-      <div className="col-span-6 rounded-lg bg-amber-200 p-4">
+      <div className="col-span-6 rounded-lg bg-application-bg p-4">
         <ProductFilters />
       </div>
       <div className="col-span-1">
